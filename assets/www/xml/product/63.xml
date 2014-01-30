@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?><product>
+	<id>63</id>
+	<name>F097. Chateau -du-pape remy Ferbras</name>
+	<price>980,000đ</price>
+	<img>France/F097.png</img>
+	<info><![CDATA[<table class="data-table" id="product-attribute-specs-table" style="border-style: solid; border-color: rgb(190, 188, 183); margin: 0px; padding: 0px; border-spacing: 0px; empty-cells: show; width: 478px; color: rgb(47, 47, 47); font-family: Arial, Helvetica, sans-serif; line-height: 18px; text-align: left; ">
+	<tbody style="margin: 0px; padding: 0px; ">
+		<tr class="first odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Loại rượu</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Vang Đỏ</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Xuất xứ</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Ph&aacute;p</td>
+		</tr>
+		<tr class="odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">V&ugrave;ng trồng nho</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Cotes du Rhone</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Dung t&iacute;ch</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">750ml</td>
+		</tr>
+		<tr class="odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Hương vị</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">&nbsp;</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237); ">
+			<th class="label" style="border-right-color: rgb(217, 221, 227); border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">Nồng độ cồn</th>
+			<td class="data last" style="border-bottom-color: rgb(217, 221, 227); border-right-width: 0px; border-bottom-style: solid; margin: 0px; padding: 3px 8px; vertical-align: top; ">14.5% vol</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+]]></info>
+</product>

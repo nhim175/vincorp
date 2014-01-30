@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script type="text/javascript" src="cordova-2.7.0.js"></script>
+  <script type="text/javascript" src="smsplugin.js"></script>
+  <!-- Extra Codiqa features -->
+  <script src="js/codiqa.ext.js"></script>
+   
+</head>
+<body>
+
+<!-- Cover -->
+<div data-role="page" id="cover">
+    <div data-role="content">
+        <p class="img logo"><img src="img/vincorp-logo.png" /></p>
+        <h2>Công ty cổ phần Vincorp</h2>
+        <h3>Nhà phân phối rượu vang hàng đầu Việt Nam</h3>
+        <p class="img"><img src="img/banner.png" /></p> 
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+              <ul>
+                  <li><a href="#home" data-icon="product" class="ui-btn-active ui-state-persist">Sản phẩm</a></li>
+                  <li><a href="#cart" data-icon="cart" data-transition="flip">Giỏ hàng</a></li>                
+                  <li><a href="#contact" data-icon="contact" data-transition="flip">Liên hệ</a></li>
+              </ul>
+          </div><!-- /navbar -->
+        </div><!-- /footer -->
+</div>
+
+<!-- Home -->
+<div data-role="page" id="home">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#cover" class="ui-btn-left" data-transition="slide" data-direction="reverse">
+          Back
+        </a>
+        <h3>
+            Vincorp.vn
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="center btn-group">
+          <a href="index.html" data-role="button" id="btn-country" onclick="return renderCountryList();">Xuất xứ</a>
+          <a href="index.html" data-role="button" id="btn-price" onclick="return renderPriceList();">Mức giá</a>
+          <a href="index.html" data-role="button" id="btn-type" onclick="return renderTypeList();">Loại rượu</a>
+        </div>
+        <!-- #list-country -->
+        <div class="ui-grid-a list-home" id="list-country">
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Chile" data-country="1" data-transition="slide"><img style="width: 50%" src="img/chile.png"></a>
+                </div>
+                <h5>
+                    Chile
+                </h5>
+            </div>
+            <div class="ui-block-b">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="New Zealand" data-transition="slide" data-country="2"><img style="width: 50%" src="img/nz.gif"></a>
+                </div>
+                <h5>
+                    New Zealand
+                </h5>
+            </div>
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Argentina" data-country="3" data-transition="slide"><img style="width: 50%" src="img/ar.gif"></a>
+                </div>
+                <h5>
+                    Argentina
+                </h5>
+            </div>
+            <div class="ui-block-b">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Australia" data-country="4" data-transition="slide"><img style="width: 50%" src="img/au.gif"></a>
+                </div>
+                <h5>
+                    Australia
+                </h5>
+            </div>
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="France" data-country="5" data-transition="slide"><img style="width: 50%" src="img/fr.gif"></a>
+                </div>
+                <h5>
+                    France
+                </h5>
+            </div>
+            <div class="ui-block-b">
+            </div>
+        </div>
+
+        <!-- #list-type -->
+        <div class="ui-grid-a list-home" id="list-type">
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Champagne &amp; Vang nổ" data-type="1" data-transition="slide"><img style="width: 50%" src="img/vangno.png"></a>
+                </div>
+                <h5>
+                    Champagne &amp; Vang nổ
+                </h5>
+            </div>
+            <div class="ui-block-b">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Vang trắng" data-transition="slide" data-type="2"><img style="width: 50%" src="img/vangtrang.png"></a>
+                </div>
+                <h5>
+                    Vang trắng
+                </h5>
+            </div>
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Vang đỏ" data-type="3" data-transition="slide"><img style="width: 50%" src="img/vangdo.png"></a>
+                </div>
+                <h5>
+                    Vang đỏ 
+                </h5>
+            </div>
+            <div class="ui-block-b">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Vang ngọt" data-type="4" data-transition="slide"><img style="width: 50%" src="img/vangngot.png"></a>
+                </div>
+                <h5>
+                    Vang ngọt
+                </h5>
+            </div>
+            <div class="ui-block-a">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Vang hồng" data-type="5" data-transition="slide"><img style="width: 50%" src="img/vanghong.png"></a>
+                </div>
+                <h5>
+                    Vang hồng
+                </h5>
+            </div>
+            <div class="ui-block-b">
+                <div style=" text-align:center">
+                    <a href="#category" data-title="Vang quý hiếm" data-type="6" data-transition="slide"><img style="width: 50%" src="img/vangquyhiem.png"></a>
+                </div>
+                <h5>
+                    Vang quý hiếm
+                </h5>
+            </div>
+        </div>
+
+        <!-- #list-price -->
+        <div class="ui-grid-a list-home" id="list-price">
+          <div class="ui-block-a">
+              <div style=" text-align:center">
+                  <a href="#category" data-title="Dưới 500.000đ" data-price="1" data-transition="slide"><img style="width: 50%" src="img/price1.png"></a>
+              </div>
+              <h5>
+                  Dưới 500.000đ
+              </h5>
+          </div>
+          <div class="ui-block-b">
+              <div style=" text-align:center">
+                  <a href="#category" data-title="Từ 500.000đ đến 1.000.000đ" data-transition="slide" data-price="2"><img style="width: 50%" src="img/price2.png"></a>
+              </div>
+              <h5>
+                  Từ 500.000đ đến 1.000.000đ
+              </h5>
+          </div>
+          <div class="ui-block-a">
+              <div style=" text-align:center">
+                  <a href="#category" data-title="Từ 1.000.000đ đến 5.000.000đ" data-price="3" data-transition="slide"><img style="width: 50%" src="img/price3.png"></a>
+              </div>
+              <h5>
+                  Từ 1.000.000đ đến 5.000.000đ
+              </h5>
+          </div>
+          <div class="ui-block-b">
+              <div style=" text-align:center">
+                  <a href="#category" data-title="Từ 5.000.000đ đến 10.000.000đ" data-price="4" data-transition="slide"><img style="width: 50%" src="img/price4.png"></a>
+              </div>
+              <h5>
+                  Từ 5.000.000đ đến 10.000.000đ
+              </h5>
+          </div>
+          <div class="ui-block-a">
+              <div style=" text-align:center">
+                  <a href="#category" data-title="10.000.000đ trở lên" data-price="5" data-transition="slide"><img style="width: 50%" src="img/price5.png"></a>
+              </div>
+              <h5>
+                  10.000.000đ trở lên
+              </h5>
+          </div>
+          <div class="ui-block-b">
+          </div>
+        </div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#cart" data-icon="star" data-transition="flip">Giỏ hàng</a></li>                
+                <li><a href="#contact" data-icon="info" data-transition="flip">Liên hệ</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div>
+
+<!--Category-->
+<div data-role="page" id="category">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <a data-role="button" data-transition="slide" data-direction="reverse" href="#home" class="ui-btn-left">
+            Back
+        </a>
+        <h3>
+            Vincorp.vn
+        </h3>
+        
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" id="list-products" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading" class="list-heading">
+                Chile
+            </li>
+            <li data-theme="c">
+              <img src="img/products/Chile/C083.jpg">
+              <h2><a href="#page1" data-transition="slide">
+                  C057. Mancura Chardonnay Chardonnay 
+              </a></h2>
+              <p>Product description</p>
+            </li>
+            <li data-theme="c">
+              <img src="img/products/Chile/C083.jpg">
+              <h2><a href="#page1" data-transition="slide">
+                  C014. La Joya Chardonnay
+              </a></h2>
+              <p>Product description</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Product -->
+<div data-role="page" id="product">
+  <div data-theme="a" data-role="header" data-position="fixed">
+    <a data-role="button" href="#category" class="ui-btn-left" data-transition="slide" data-direction="reverse">
+      Back
+    </a>
+    <h3>
+      C057. Mancura Chardonnay
+    </h3>
+  </div>
+  <div data-role="content">
+    <div style=" text-align:center" class="product-img">
+      <img style="height: 200px" src="http://vincorp.vn/assets/img/products/Chile/C057.png" class="product-img">
+    </div>
+    <p class="name"></p>
+    <p class="price"></p>
+    <a href="#cart" class="add-to-cart" data-role="button" data-icon="star" data-iconpos="left" data-transition="slide">Đặt mua</a>
+    <div class="product-desc"></div>
+  </div>
+</div>
+
+
+<!-- Cart -->
+<div data-role="page" id="cart">
+  <div data-theme="a" data-role="header">
+    <a data-role="button" data-direction="reverse" data-rel="back" href="#page1"
+    class="ui-btn-left">
+      Back
+    </a>
+    <h3>
+      Giỏ hàng
+    </h3>
+  </div>
+  <div data-role="content" class="cart">
+    <div class="ui-grid-b">
+      <div class="ui-block-a">
+      </div>
+      <div class="ui-block-b">
+      </div>
+      <div class="ui-block-c">
+      </div>
+      <div class="ui-block-a">
+      </div>
+      <div class="ui-block-b">
+      </div>
+      <div class="ui-block-c">
+      </div>
+      <div class="ui-block-a">
+      </div>
+      <div class="ui-block-b">
+      </div>
+      <div class="ui-block-c">
+      </div>
+    </div>
+  </div>
+  <div data-role="content" class="checkout">
+    <h3 class="center">
+      Thanh toán
+    </h3>
+    <form action="#" method="POST">
+    
+      <div data-role="fieldcontain">
+        <label for="txtName">
+          Họ tên
+        </label>
+        <input name="name" id="txtName" placeholder="Angela Phương Trinh" value=""
+        type="text">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="txtPhone">
+          Điện thoại
+        </label>
+        <input name="phone" id="txtPhone" placeholder="0989..." value="" type="tel">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="txtEmail">
+          Email
+        </label>
+        <input name="email" id="txtEmail" placeholder="abc@example.com" value=""
+        type="email">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="txtAddress">
+          Địa chỉ
+        </label>
+        <input name="address" id="txtAddress" placeholder="24A Khâm Thiên, Hà Nội"
+        value="" type="text">
+      </div>
+      <input onclick="sendOrder()" type="submit" value="Gửi đơn hàng">
+    </form>
+  </div>
+  <div data-theme="a" data-role="footer" data-position="fixed">
+    <div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li>
+          <a href="#" class="ui-btn-active" data-transition="fade" data-theme="" data-icon="star" onClick="renderCart()" id="btn-cart">
+            Sản phẩm
+          </a>
+        </li>
+        <li>
+          <a href="#" data-transition="fade" data-theme="" data-icon="check" id="btn-checkout" onClick="renderCheckout()">
+            Thanh toán
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- About -->
+<div data-role="page" id="about">
+  <div data-theme="a" data-role="header">
+    <a data-role="button" data-direction="reverse" data-rel="back" href="#page1"
+    class="ui-btn-left">
+      Back
+    </a>
+    <h3>
+      Công ty cổ phần Vincorp
+    </h3>
+  </div>
+  <div data-role="content" class="contact">
+    <p>Được thành lập năm 2005 hoạt động trong lĩnh vực kinh doanh các loại rượu vang nhập khẩu từ nhiều  nước trên thế giới như Pháp, Úc , Chi lê, Argentina, New Zealand….. Với đội ngũ quản lý và nhân viên, được đào tạo chuyên nghiệp và có nhiều năm kinh nghiệm chuyên sâu về lĩnh vực rượu vang, Công Ty Cổ Phần Vincorp mang đến cho quý khách hàng những loại rượu vang được chọn lựa kỹ càng từ những thương hiệu nổi tiếng và từ quê hương của các loại rượu vang hàng đầu thế giới.</p>
+    <p>Công Ty Cổ Phần Vincorp , với mạng lưới các chi nhánh, nhà phân phối rộng khắp cả nước, chúng tôi hiện là một trong những cung cấp rượu vang hàng đầu cả nước. Khách hàng quen thuộc của chúng tôi là hệ thống các tập đoàn nhà hàng, khách sạn hàng đầu Việt Nam cũng như các cá nhân, tổ chức và doanh nghiệp trên cả nước. Sản phẩm của chúng tôi thường xuyên được hiện diện và sử dụng tại các buổi tối lãng mạn của những cặp tình nhân, những buổi tiếp khách sang trọng của các doanh nhân thành đạt, những buổi tiệc vui vẻ của tình bè bạn, đến các bữa cơm gia đình thân mật hay trong những giỏ quà tặng tri ân.</p>
+    <p>Với sự đa dạng về chủng loại sản phẩm, gía cả hợp lý, chất lượng và dịch vụ hoàn hảo, chúng tôi luôn luôn mong muốn và hướng tới việc mang đến cho quý khách hàng sự hài hòng và sự thỏa mãn niềm đam mê rượu vang, một đồ uống sang trọng và rất có lợi cho sức khỏe.</p>
+  </div>
+</div>
+
+<!-- Contact -->
+<div data-role="page" id="contact">
+  <div data-theme="a" data-role="header">
+    <a data-role="button" data-direction="reverse" data-rel="back" href="#page1"
+    class="ui-btn-left">
+      Back
+    </a>
+    <h3>
+      Liên hệ
+    </h3>
+  </div>
+  <div data-role="content" class="contact">
+    <p><b>Trụ sở chính và showroom tại Hà Nội</b></p>
+    <p><b>Địa chỉ:</b> 21 Ngõ Huế - P.Ngô Thì Nhậm – Q. Hai Bà Trưng – Hà Nội</p>
+    <p><b>Điện thoại:</b> +84 4 39766154/ 4 39766167</p>
+    <p><b>Fax:</b> + 84 4 39766153</p>
+    <p class="center"><img src="img/map1.png"/></p>
+
+    <p><b>Chi nhánh Hồ Chí Minh</b></p>
+    <p><b>Địa chỉ:</b>  11 Trần Doãn Khanh – Dakao- Quận 1- Hồ Chí Minh</p>
+    <p><b>Điện thoại:</b> + 84 8 39104666/ 8 39104333</p>
+    <p><b>Fax:</b> + 84 8 39106992</p>
+    <p class="center"><img src="img/map2.png"/></p>
+
+    <p><b>Chi nhánh Nha Trang</b></p>
+    <p><b>Địa chỉ:</b>  316/18 Dã Tượng - Nha Trang- Khánh Hòa</p>
+    <p><b>Tel:</b> + 84 058 3882388</p>
+    <p><b>Fax:</b> + 84 058 3882588</p>
+    <p class="center"><img src="img/map3.png"/></p>
+  </div>
+</div>
+
+<script type="text/javascript">
+$( document ).on( "mobileinit", function() {
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+}).on( "ready", function() {
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+});
+
+var IMG_DIR = 'img/products/';
+var PHONE = '+84979170590';
+
+function Product(id, name, img, price, info) {
+  this.id = id;
+  this.name = name;
+  this.img = img;
+  this.price = price;
+  this.info = info;
+}
+
+var guest = {name: '', phone: '', email: '', address: '', cart: []};
+var data;
+
+
+function convertImg(img) {
+  return img.replace('png', 'jpg');
+}
+
+
+
+$('#home #list-country a').click(function() {  
+  var country_id = parseInt($(this).data('country'));
+  var title = $(this).data('title');
+  $('#list-products').html('');
+  $('#category #list-products').append('<li data-role="list-divider" role="heading" class="list-heading">'+title+'</li>');
+
+  $.ajax({url: 'xml/country/' + country_id + '.xml', dataType: 'xml'}).done(function(xml) {
+    data = xml;
+    $.each($(xml).find('product'), function() {
+      //console.log($(this).find('name').text());
+      var name = $(this).find('name').text();
+      var id = $(this).find('id').text();
+      var img = $(this).find('img').text();
+      $('#list-products').append('<li data-theme="c"><img src="img/products/' + convertImg(img)+ '"/><h2><a href="#product" data-product="' + id + '" data-transition="slide">' + name + '</a></h2></li>');
+      $('#list-products').listview('refresh');
+    });
+  });
+});
+
+$('#home #list-type a').click(function(e) {  
+  //e.preventDefault();
+  $.mobile.loading('show');
+  var type_id = parseInt($(this).data('type'));
+  var title = $(this).data('title');
+
+  $('#category #list-products').html('');
+  $('#category #list-products').append('<li data-role="list-divider" role="heading" class="list-heading">'+title+'</li>');
+  $('#category #list-products').listview('refresh');
+  // $.mobile.loading( "show", {
+  //   text: "foo",
+  //   textVisible: true,
+  //   theme: "z",
+  //   html: ""
+  // });
+  
+
+  $.ajax({url: 'xml/type/' + type_id + '.xml', dataType: 'xml'}).done(function(xml) {
+
+    data = xml;
+    $.each($(xml).find('product'), function() {
+      var name = $(this).find('name').text();
+      var id = $(this).find('id').text();
+      var img = $(this).find('img').text();
+      $('#list-products').append('<li data-theme="c"><img src="img/products/' + convertImg(img)+ '"/><h2><a href="#product" data-product="' + id + '" data-transition="slide">' + name + '</a></h2></li>');
+      $('#list-products').listview('refresh');
+    });
+  });
+});
+
+$('#home #list-price a').click(function() {  
+  var price_range = $(this).data('price');
+  console.log(price_range);
+  var title = $(this).data('title');
+  $('#category #list-products').html('');
+  $('#category #list-products').append('<li data-role="list-divider" role="heading" class="list-heading">'+title+'</li>').listview('refresh');
+
+  $.ajax({url: 'xml/price/' + price_range + '.xml', dataType: 'xml'}).done(function(xml) {
+    data = xml;
+    $.each($(xml).find('product'), function() {
+      var name = $(this).find('name').text();
+      var id = $(this).find('id').text();
+      var img = $(this).find('img').text();
+      $('#list-products').append('<li data-theme="c"><img src="img/products/' + convertImg(img)+ '"/><h2><a href="#product" data-product="' + id + '" data-transition="slide">' + name + '</a></h2></li>');
+      $('#list-products').listview('refresh');
+    });
+  });
+});
+
+
+
+$(document).on('click', '#category li a', function() {
+  $('#product h3').text('');
+  $('#product .product-img').attr('src', '');
+  console.log('click');
+  console.log($(this).data('product'));
+  var product_id = $(this).data('product');
+  $.ajax({url: 'xml/product/' + product_id + '.xml', dataType: 'xml'}).done(function(xml) {
+    var id = $(xml).find('id').text();
+    var name = $(xml).find('name').text();
+    var img = $(xml).find('img').text();
+    var price = $(xml).find('price').text();
+    var info = $(xml).find('info').text();
+    $('#product h3').text(name);
+    $('#product .product-img').attr('src', IMG_DIR + convertImg(img));
+    $('#product .price').text(price);
+    $('#product .name').text(name);
+    $('#product .product-desc').html(info);
+    $('#product .product-desc table').css('width', '100%');
+    $('#product .add-to-cart').data('productId', id);
+    console.log(info);
+  });
+});
+
+$('.add-to-cart').click(function() {
+  addToCart($(this).data('productId'));
+  navigator.notification.alert(
+      'Bạn đã đặt hàng thành công!',  // message
+      'Info',            // title
+      'Xong'                  // buttonName
+  );
+});
+
+function sendOrder() {
+  var name = $('#txtName').val();
+  var phone = $('#txtPhone').val();
+  var email = $('#txtEmail').val();
+  var address = $('#txtAddress').val();
+  var products = '';
+  for(var i = 0; i < guest.cart.length; i++) {
+    products += guest.cart[i].id;
+    products += ' ';
+  }
+  var sms = name + ', ' + phone + ', ' + email + ', ' + address + ', ' + products;
+  cordova.exec(function(winParam) {
+    navigator.notification.alert(
+        'Đơn hàng đã được gửi đi!',  // message
+        'Info',            // title
+        'Xong'                  // buttonName
+    );
+  }, function(error) {
+    navigator.notification.alert(
+        'Có lỗi!',  // message
+        'Error',            // title
+        'Xong'                  // buttonName
+    );
+  }, "SendSms", "SendSms", [PHONE, sms]);
+  guest.cart = [];
+}
+
+function getProduct(id) {
+  var name, img, price, info, product;
+  $.ajax({url: 'xml/product/' + id + '.xml', async: false, dataType: 'xml'}).done(function(xml) {
+    name = $(xml).find('name').text();
+    img = convertImg($(xml).find('img').text());
+    price = $(xml).find('price').text();
+    info = $(xml).find('info').text();  
+    product = new Product(id, name, img, price, info);  
+  });
+  return product;
+}
+
+function inCart(id) {
+  for(var i = 0; i < guest.cart.length; i++) {
+    if(guest.cart[i].id == id) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function addToCart(id) {
+  if(!inCart(id)) {
+    guest.cart.push(getProduct(id));
+  }
+  renderCart();
+}
+
+function renderCart() {
+  var grid = $('#cart .ui-grid-b');
+  grid.html('');
+  var j = 0;
+  for(var i = 0; i < guest.cart.length; i++) {
+    var p = guest.cart[i];
+    if(j == 0) {
+      grid.append('<div class="ui-block-a"><p class="product-img"><img src="'+IMG_DIR+p.img+'"/></p><p class="prodct-name">'+p.name+'</p><p class="price">'+p.price+'</p></div>');  
+    } else if (j == 1) {
+      grid.append('<div class="ui-block-b"><p class="product-img"><img src="'+IMG_DIR+p.img+'"/></p><p class="prodct-name">'+p.name+'</p><p class="price">'+p.price+'</p></div>');  
+    } else if (j == 2) {
+      grid.append('<div class="ui-block-c"><p class="product-img"><img src="'+IMG_DIR+p.img+'"/></p><p class="prodct-name">'+p.name+'</p><p class="price">'+p.price+'</p></div>');  
+    }
+    j++;
+    if(j == 3) {j = 0;}
+  }
+  $('#cart .checkout').hide();
+  $('#cart .cart').fadeIn();
+  
+}
+
+function renderCheckout() {
+  $('#cart .cart').hide();
+  $('#cart .checkout').fadeIn();
+}
+
+function renderPriceList() {
+  $('#home .list-home').hide();
+  $('#list-price').fadeIn();
+  return false;
+}
+
+function renderCountryList() {
+  $('#home .list-home').hide();
+  $('#list-country').fadeIn();
+  return false;
+}
+
+function renderTypeList() {
+  $('#home .list-home').hide();
+  $('#list-type').fadeIn();
+  return false;
+}
+
+</script>
+</body>
+</html>

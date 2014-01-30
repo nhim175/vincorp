@@ -1,0 +1,155 @@
+/* Put your custom CSS here */
+@font-face {
+	font-family: OpenSansLight;
+	src: url('font/OpenSans-CondLight.ttf');
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url('font/OpenSans-CondBold.ttf');
+}
+
+
+h5 {
+	text-align: center;
+}
+
+.price {
+	color: #8E1314;
+	text-align: center;
+	font-weight: bold;
+}
+
+#cart img {
+	width: 30%;
+}
+
+#cart .ui-grid-b div {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.checkout {
+	display: none;
+}
+
+.ui-controlgroup.ui-mini {
+	margin-bottom: 2em !important;
+}
+
+#list-price {
+	display: none;
+}
+
+#list-type {
+	display: none;
+}
+
+#home, #category, #contact, #about {
+	--background: url(img/bg.png) no-repeat bottom #fcedb0;
+	background: url(img/bg.jpg) no-repeat top left;
+	-webkit-background-size: cover;
+}
+
+#cover {
+	background-image: url(img/cover-bg.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+#cover .img {
+	text-align: center;
+}
+#cover .img img {
+	max-width: 100%;
+	max-height: 40%;
+}
+#home h5, [data-role=list-divider] {
+	color: #FFF;
+	text-shadow: 0 1px 0 #333;
+}
+#cover h1 {
+	width: 353px;
+	height: 152px;
+	zoom: 0.7;
+	margin: 0 auto;
+	background: url(img/vincorp-logo.png) no-repeat top left transparent;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#cover h2 {
+	font-family: OpenSansBold;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	color: #250000;
+}
+#cover h3 {
+	font-family: OpenSansLight;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	color: #250000;
+}
+
+#cover .ui-icon {
+	width: 96px;
+	height: 77px;
+	margin-left: -48px;
+	zoom: 0.6;
+}
+
+.ui-icon-cart {
+	background: url(img/icon-cart.png) no-repeat top left transparent;
+}
+.ui-icon-product {
+	background: url(img/icon-product.png) no-repeat top left transparent;
+}
+.ui-icon-contact {
+	background: url(img/icon-contact.png) no-repeat top left transparent;
+}
+#cover .ui-bar-a {
+	opacity: 0.8;
+}
+#cover .ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+	padding-top: 50px;
+}
+#contact img {
+	width: 100%;
+	max-width: 500px;
+}
+#cover .logo {
+	text-align: center;
+}
+#cover .logo img {
+	width: 50%;
+}
+#cover h2, #cover h3 {
+	margin: 0;
+}
+#list-products .ui-li-thumb {
+	padding: 0px 30px;
+	background: #FFF;
+	width: 26px;
+}
+#product .name {
+	text-align: center;
+}
+#list-products li:first-child {
+	background-image: linear-gradient(rgb(134, 41, 24),rgb(85, 13, 25));
+	border: none;
+}
+#list-products a {
+	text-decoration: none !important;
+	color: rgb(85, 13, 25) !important;
+	white-space: normal;
+}
+
+@media (device-aspect-ratio: 2/3) {
+	#cover h2 {
+		display: none;
+	}
+	#cover h3 {
+		font-size: 1em;
+	}
+
+}

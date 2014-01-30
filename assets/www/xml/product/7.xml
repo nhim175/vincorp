@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?><product>
+	<id>7</id>
+	<name>C057. Mancura Chardonnay</name>
+	<price>210,000đ</price>
+	<img>Chile/C057.png</img>
+	<info><![CDATA[<div class="std" style="margin: 0px; padding: 0px;">
+<div class="box-collateral box-additional" style="margin: 0px; padding: 0px; color: rgb(47, 47, 47); font-family: Arial, Helvetica, sans-serif; line-height: 18px;">
+<table class="data-table" id="product-attribute-specs-table" style="margin: 0px; padding: 0px; empty-cells: show; width: 505px; border-style: solid; border-color: rgb(190, 188, 183); height: 172px;">
+	<colgroup style="margin: 0px; padding: 0px;">
+		<col style="margin: 0px; padding: 0px;" width="25%" />
+		<col style="margin: 0px; padding: 0px;" />
+	</colgroup>
+	<tbody style="margin: 0px; padding: 0px;">
+		<tr class="first odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">Loại rượu</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">Vang trắng</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">Xuất xứ</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">Chi L&ecirc;</td>
+		</tr>
+		<tr class="odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">V&ugrave;ng trồng nho</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">Colchagua Valley</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">Dung t&iacute;ch</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">750ml</td>
+		</tr>
+		<tr class="odd" style="margin: 0px; padding: 0px; background-color: rgb(248, 247, 245);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">Hương vị</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">
+			<p><em>Rượu mang m&agrave;u v&agrave;ng trong s&aacute;ng kết hợp với m&agrave;u xanh của l&aacute; c&acirc;y &ocirc;liu toả s&aacute;ng rực rỡ, với hương thơm của tr&aacute;i c&acirc;y miền nhiệt đới dứa, xo&agrave;i, cam v&agrave; qu&yacute;t kết hợp với ch&uacute;t thảo mộc.</em></p>
+			</td>
+		</tr>
+		<tr class="even" style="margin: 0px; padding: 0px; background-color: rgb(238, 237, 237);">
+			<th class="label" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-style: solid; border-right-color: rgb(217, 221, 227);">Nồng độ cồn</th>
+			<td class="data last" style="margin: 0px; padding: 3px 8px; vertical-align: top; border-bottom-style: solid; border-bottom-color: rgb(217, 221, 227); border-right-width: 0px;">13,5% vol</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+]]></info>
+</product>
